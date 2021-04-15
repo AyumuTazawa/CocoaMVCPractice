@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63B53E5A26271C2400D650AA /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B53E5926271C2400D650AA /* CounterModel.swift */; };
 		63BDF2452625C93900435FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BDF2442625C93900435FC0 /* AppDelegate.swift */; };
 		63BDF2472625C93900435FC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BDF2462625C93900435FC0 /* SceneDelegate.swift */; };
 		63BDF2492625C93900435FC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BDF2482625C93900435FC0 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63B53E5926271C2400D650AA /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
 		63BDF2412625C93900435FC0 /* CocoaMVCPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaMVCPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BDF2442625C93900435FC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63BDF2462625C93900435FC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				63BDF2442625C93900435FC0 /* AppDelegate.swift */,
 				63BDF2462625C93900435FC0 /* SceneDelegate.swift */,
 				63BDF2482625C93900435FC0 /* ViewController.swift */,
+				63B53E5926271C2400D650AA /* CounterModel.swift */,
 				63BDF24A2625C93900435FC0 /* Main.storyboard */,
 				63BDF24D2625C93A00435FC0 /* Assets.xcassets */,
 				63BDF24F2625C93A00435FC0 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				63BDF2492625C93900435FC0 /* ViewController.swift in Sources */,
 				63BDF2452625C93900435FC0 /* AppDelegate.swift in Sources */,
+				63B53E5A26271C2400D650AA /* CounterModel.swift in Sources */,
 				63BDF2472625C93900435FC0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
