@@ -9,9 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    @IBOutlet weak var counterView: UILabel!
-    private lazy var counterModel = CountModel()
+    @IBOutlet var contetView: CounterView!
+    private(set) lazy var counterModel = CountModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
