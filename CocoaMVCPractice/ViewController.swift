@@ -18,6 +18,11 @@ class ViewController: UIViewController {
         
     }
 
+    @objc func handleCountChage(_ notification: Notification) {
+        if let count = notification.object as? Int {
+            contetView.render(count: count)
+        }
+    }
 
 }
 
