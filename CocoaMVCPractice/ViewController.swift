@@ -23,6 +23,10 @@ class ViewController: UIViewController {
             contetView.render(count: count)
         }
     }
+    
+    @IBAction func OnPulusButtonTapped(_ sender: Any) {
+        
+    }
 
 }
 
