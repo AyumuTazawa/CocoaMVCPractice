@@ -20,11 +20,11 @@ class CountModel {
     }
     
     func countUp() {
-        count = count + 1
+        count += 1
     }
     
     func countDown() {
-        count = count - 1
+        count -= 1
     }
     
 }

@@ -9,12 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var contetView: CounterView!
+   @IBOutlet var contetView: CounterView!
     private(set) lazy var counterModel = CountModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        counterModel.notificationCounter.addObserver(self, selector: #selector(self.handleCountChage(_:)), name: Notification.Name(rawValue: CountModel.notifcationName), object: nil)
         
     }
 
@@ -24,9 +25,13 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func OnPulusButtonTapped(_ sender: Any) {
+    @IBAction func OnPlusButtonTapped(_ sender: Any) {
         counterModel.countUp()
     }
-
+    
+    @IBAction func OnMinusButtonTapped(_ sender: Any) {
+        counterModel.countDown()
+    }
+    
 }
 

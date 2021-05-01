@@ -20,14 +20,28 @@
                                 <rect key="frame" x="84" y="503" width="84" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="プラス"/>
+                                <connections>
+                                    <action selector="OnPlusButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDZ-FO-JTE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB0-Mf-ERj">
                                 <rect key="frame" x="216" y="503" width="84" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="マイナス"/>
+                                <connections>
+                                    <action selector="OnMinusButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEr-bx-nma"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVb-rN-VLy" customClass="CountertView" customModule="CocoaMVCPractice" customModuleProvider="target">
-                                <rect key="frame" x="84" y="318" width="247" height="75"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLY-fD-xfb" customClass="CounterView" customModule="CocoaMVCPractice" customModuleProvider="target">
+                                <rect key="frame" x="91" y="112" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="countLabel" destination="GVb-rN-VLy" id="U9c-bU-aKs"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVb-rN-VLy">
+                                <rect key="frame" x="84" y="286" width="247" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -38,7 +52,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="counterView" destination="GVb-rN-VLy" id="089-4H-d3S"/>
+                        <outlet property="contetView" destination="uLY-fD-xfb" id="ECo-qw-GNq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
