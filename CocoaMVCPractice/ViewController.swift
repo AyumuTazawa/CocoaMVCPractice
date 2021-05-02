@@ -32,6 +32,5 @@ class ViewController: UIViewController {
     @IBAction func OnMinusButtonTapped(_ sender: Any) {
         counterModel.countDown()
     }
-    
 }
 

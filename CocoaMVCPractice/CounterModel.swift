@@ -26,5 +26,4 @@ class CountModel {
     func countDown() {
         count -= 1
     }
-    
 }

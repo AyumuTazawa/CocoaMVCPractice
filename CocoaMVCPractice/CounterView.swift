@@ -13,5 +13,4 @@ class CounterView: UIView {
     public func render(count: Int) {
         countLabel.text = String(count)
     }
-
 }
